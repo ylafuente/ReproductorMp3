@@ -6,16 +6,16 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:orientation="vertical"
+      android:background="@android:color/background_light"
       tools:context=".MainActivity">
 
     <TextView
-          android:id="@+id/textView3"
-          android:layout_width="match_parent"
-          android:layout_height="95dp"
-          android:gravity="center"
-          android:text="Nombre de la canción"
-          android:textSize="20dp"
-          android:textStyle="bold" />
+        android:id="@+id/NombrePrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
       <LinearLayout
           android:layout_width="match_parent"
@@ -29,7 +29,7 @@
               android:layout_weight="1" />
 
           <ImageView
-              android:id="@+id/imageButton1"
+              android:id="@+id/prevButt"
               android:layout_width="40dp"
               android:layout_height="40dp"
               app:srcCompat="@drawable/back" />
@@ -40,10 +40,12 @@
               android:layout_weight="1" />
 
           <ImageView
-              android:id="@+id/imageButton2"
+              android:id="@+id/play_pause"
               android:layout_width="40dp"
               android:layout_height="40dp"
-              app:srcCompat="@drawable/play_button" />
+              android:clickable="true"
+              app:srcCompat="@drawable/play_button"
+              tools:onClick="pause_playClick" />
 
           <Space
               android:layout_width="68dp"
@@ -51,7 +53,7 @@
               android:layout_weight="1" />
 
           <ImageView
-              android:id="@+id/imageButton3"
+              android:id="@+id/nextButt"
               android:layout_width="40dp"
               android:layout_height="40dp"
               app:srcCompat="@drawable/next" />
@@ -85,7 +87,7 @@
               app:srcCompat="@drawable/speaker" />
 
           <SeekBar
-              android:id="@+id/seekBar"
+              android:id="@+id/volumeSeekBar"
               android:layout_width="267dp"
               android:layout_height="31dp"
               tools:layout_editor_absoluteX="32dp"
@@ -120,7 +122,7 @@
               app:srcCompat="@drawable/fast_forward" />
 
           <SeekBar
-              android:id="@+id/seekBar2"
+              android:id="@+id/advanceSeekBar"
               android:layout_width="267dp"
               android:layout_height="31dp"
               tools:layout_editor_absoluteX="32dp"
@@ -150,7 +152,8 @@
               android:layout_width="381dp"
               android:layout_height="473dp"
               tools:layout_editor_absoluteX="8dp"
-              tools:layout_editor_absoluteY="247dp" />
+              tools:layout_editor_absoluteY="247dp"
+              android:textColor="@android:color/tab_indicator_text"/>
 
       </LinearLayout>
 
