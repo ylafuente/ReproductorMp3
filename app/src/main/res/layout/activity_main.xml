@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:context=".MainActivity">
+
+    <TextView
+          android:id="@+id/textView3"
+          android:layout_width="match_parent"
+          android:layout_height="95dp"
+          android:gravity="center"
+          android:text="Nombre de la canción"
+          android:textSize="20dp"
+          android:textStyle="bold" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="54dp"
+          android:gravity="center"
+          android:orientation="horizontal">
+
+          <Space
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1" />
+
+          <ImageView
+              android:id="@+id/imageButton1"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              app:srcCompat="@drawable/back" />
+
+          <Space
+              android:layout_width="62dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1" />
+
+          <ImageView
+              android:id="@+id/imageButton2"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              app:srcCompat="@drawable/play_button" />
+
+          <Space
+              android:layout_width="68dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1" />
+
+          <ImageView
+              android:id="@+id/imageButton3"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              app:srcCompat="@drawable/next" />
+
+          <Space
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1" />
+
+      </LinearLayout>
+
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="28dp" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="41dp"
+          tools:layout_editor_absoluteX="58dp"
+          tools:layout_editor_absoluteY="292dp">
+
+          <Space
+              android:layout_width="25dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1" />
+
+          <ImageView
+              android:id="@+id/imageView2"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              app:srcCompat="@drawable/speaker" />
+
+          <SeekBar
+              android:id="@+id/seekBar"
+              android:layout_width="267dp"
+              android:layout_height="31dp"
+              tools:layout_editor_absoluteX="32dp"
+              tools:layout_editor_absoluteY="114dp" />
+
+          <Space
+              android:layout_width="51dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1" />
+
+      </LinearLayout>
+
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="15dp" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="41dp"
+          tools:layout_editor_absoluteX="58dp"
+          tools:layout_editor_absoluteY="292dp">
+
+          <Space
+              android:layout_width="25dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1" />
+
+          <ImageView
+              android:id="@+id/imageView"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              app:srcCompat="@drawable/fast_forward" />
+
+          <SeekBar
+              android:id="@+id/seekBar2"
+              android:layout_width="267dp"
+              android:layout_height="31dp"
+              tools:layout_editor_absoluteX="32dp"
+              tools:layout_editor_absoluteY="114dp" />
+
+          <Space
+              android:layout_width="51dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1" />
+
+      </LinearLayout>
+
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="30dp" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="493dp"
+          android:orientation="horizontal"
+          android:gravity="center"
+          tools:layout_editor_absoluteX="58dp"
+          tools:layout_editor_absoluteY="292dp">
+
+          <ListView
+              android:id="@+id/PhoneMusicList"
+              android:layout_width="381dp"
+              android:layout_height="473dp"
+              tools:layout_editor_absoluteX="8dp"
+              tools:layout_editor_absoluteY="247dp" />
+
+      </LinearLayout>
+
+  </LinearLayout>
